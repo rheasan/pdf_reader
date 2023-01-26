@@ -14,7 +14,7 @@ const Pdf_Render = (props: { file: File; setValid: React.Dispatch<SetStateAction
     }
     return (
         <div>
-            <Document file={file} onLoadSuccess={onDocumentLoadSuccess} >
+            <Document file={file} onLoadSuccess={onDocumentLoadSuccess} renderMode="svg">
             {Array.from(new Array(numPages), (el, index) => (
               <Page key={`page_${index + 1}`} pageNumber={index + 1} />
             ))}
