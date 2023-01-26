@@ -4,7 +4,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 const Notebook = () => {
         return (
-            <div className="App">
+            <div className="h-full">
                 <h2>Using CKEditor 5 build in React</h2>
                 <CKEditor
                     editor={ ClassicEditor }
