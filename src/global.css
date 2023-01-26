@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.react-pdf__Page__canvas {
+.react-pdf__Page_svg {
     margin: auto;
-    width: 60% !important;
+    width: 60vw !important;
     height: auto !important;
     overflow-y: visible;
 }
