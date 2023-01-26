@@ -8,3 +8,9 @@
     height: auto !important;
     overflow-y: visible;
 }
+
+.ck-editor__editable {
+    min-height: 50em;
+    max-height: 50em;
+    overflow-y: scroll;
+}
