@@ -9,12 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tinymce/tinymce-react": "^4.3.0",
+    "@ckeditor/ckeditor5-build-classic": "^36.0.0",
+    "@ckeditor/ckeditor5-react": "^5.0.6",
+    "@types/ckeditor": "^4.9.10",
     "pdf-lib": "^1.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^6.2.2",
-    "tinymce": "^6.3.1"
+    "react-pdf": "^6.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
