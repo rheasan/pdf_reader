@@ -5,7 +5,7 @@ function App() {
     const [PDF, setPDF] = useState(new File([], "none"));
     const [valid, setValid] = useState(false);
     return (
-        <div className="bg-slate-900 h-screen w-screen px-10 overflow-y-hidden">
+        <div className="bg-slate-900 h-screen w-screen p-2 overflow-y-hidden relative">
             {
                 valid ?
                     <Pdf_Render file={PDF} setValid={setValid}/>
