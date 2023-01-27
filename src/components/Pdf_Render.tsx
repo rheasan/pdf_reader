@@ -12,7 +12,7 @@ const Pdf_Render = (props: { file: File; setValid: React.Dispatch<SetStateAction
         setNumPages(pdf.numPages);
     }
     return (
-        <div className="flex flex-row gap-1 h-full">
+        <div className="flex flex-row gap-10 h-full">
             <div className="w-fit">
                 <div className="h-10 w-full flex flex-row justify-between text-white m-0 p-1">
                     <h1 className="block">{file.name}</h1>
@@ -22,7 +22,7 @@ const Pdf_Render = (props: { file: File; setValid: React.Dispatch<SetStateAction
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess} renderMode="svg" className="w-1/2">
                         {Array.from(new Array(numPages), (el, index) => (
                             <div key={index}>
-                                <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+                                <Page key={`page_${index + 1}`} pageNumber={index + 1} width={window.innerWidth * 0.4} />
                                 <div className="h-2 bg-black m-0"></div>
                             </div>
                         ))}
